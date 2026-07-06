@@ -120,6 +120,10 @@ async def main_bot_executor():
     )
 
 if __name__ == "__main__":
+    # Force direct standalone browser installation right at startup
+    print("📦 Bootstrapping Chromium binaries...")
+    os.system("python -m playwright install chromium")
+
     server_thread = Thread(target=run_web_server)
     server_thread.daemon = True
     server_thread.start()
