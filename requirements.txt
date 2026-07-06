@@ -1,2 +1,2 @@
 playwright==1.49.1
-playwright-chromium==1.49.1
+flask
