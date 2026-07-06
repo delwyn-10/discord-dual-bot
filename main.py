@@ -25,7 +25,13 @@ async def run_single_account(state_json_file, account_name, cooldown_seconds, st
             headless=True,
             args=["--no-sandbox", "--disable-setuid-sandbox"]
         )
+        # Force Playwright to look in the custom Render cache directory
+        os.environ["PLAYWRIGHT_BROWSERS_PATH"] = "/opt/render/.cache/ms-playwright"
         
+        browser = await p.chromium.launch(
+            headless=True,
+            args=["--no-sandbox", "--disable-setuid-sandbox"]
+        )
         if os.path.exists(state_json_file):
             context = await browser.new_context(storage_state=state_json_file)
         else:
