@@ -34,10 +34,10 @@ async def main_bot_executor():
     
     async with async_playwright() as p:
         browser = await p.chromium.launch(
-            headless=True,
-            channel="chrome",
-            args=["--no-sandbox", "--disable-setuid-sandbox"]
-        )
+            browser = await p.chromium.launch(
+    headless=True,
+    args=["--no-sandbox", "--disable-setuid-sandbox"]
+)
         
         if os.path.exists("auth_account_1.json"):
             print("🔑 Found auth_account_1.json! Loading saved browser session...")
