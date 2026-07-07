@@ -13,6 +13,24 @@
       "path": "/"
     },
     {
+      "name": "_ga",
+      "value": "GA1.1.1065054063.1751799994",
+      "domain": ".discord.com",
+      "path": "/"
+    },
+    {
+      "name": "_gcl_au",
+      "value": "1.1.49029572.1783163608",
+      "domain": ".discord.com",
+      "path": "/"
+    },
+    {
+      "name": "_cfuvid",
+      "value": "FNjult5uR_3VCA_3NySg9kbvW14l2XxouUuPLcs6g9o-1783433443.5955107-1.0.1.1-ygBvGYwKwbSgo1zDENKdqdrkdzeXzxbI0BONLdk6tmo",
+      "domain": ".discord.com",
+      "path": "/"
+    },
+    {
       "name": "locale",
       "value": "en-GB",
       "domain": ".discord.com",
